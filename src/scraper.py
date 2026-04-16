@@ -230,12 +230,14 @@ def main():
             
             progress.update(task, advance=1, description=f"[cyan]Verificando: {sigla}")
 
-    # Salva arquivos
     console.print("\n[bold green]Busca finalizada! Exportando relatórios...[/]")
     df = pd.DataFrame(resultados)
     
     # Limpa caracteres zumbis eventuais
     df['Nome'] = df['Nome'].str.replace(r'\[.*?\]', '', regex=True) # remove referências tipo [1]
+    
+    # Remove duplicatas pela Sigla (ex: a Wikipédia às vezes lista a UNILAB duas vezes)
+    df = df.drop_duplicates(subset=['Sigla'], keep='first')
     
     df.to_csv("output/ouvidorias_lista.csv", index=False, encoding='utf-8')
     df.to_excel("output/ouvidorias_lista.xlsx", index=False)
