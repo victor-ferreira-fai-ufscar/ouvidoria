@@ -1,0 +1,14 @@
+[project]
+name = "ouvidoria"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "google-api-python-client>=2.194.0",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.2",
+    "playwright>=1.58.0",
+    "python-dotenv>=1.2.2",
+    "rich>=15.0.0",
+]
