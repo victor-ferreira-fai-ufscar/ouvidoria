@@ -32,6 +32,7 @@ def extract_universities_from_table(page, tipo):
             // Busca pelos índices das colunas de Nome e Sigla dinamicamente
             let nomeIdx = headers.findIndex(h => h.includes('nome') || h.includes('universidade') || h.includes('instituição'));
             let siglaIdx = headers.findIndex(h => h.includes('sigla'));
+            let estIdx = headers.findIndex(h => h.includes('estado') || h.includes('uf') || h.includes('unidade federativa') || h.includes('sede'));
             
             if (nomeIdx !== -1 && siglaIdx !== -1) {
                 table.querySelectorAll('tr').forEach(tr => {
@@ -41,33 +42,43 @@ def extract_universities_from_table(page, tipo):
                     if (cells.length > Math.max(nomeIdx, siglaIdx) && tr.querySelector('td')) {
                         const nome = cells[nomeIdx].innerText.trim().replace(/\n/g, ' ');
                         const sigla = cells[siglaIdx].innerText.trim().replace(/\n/g, ' ');
+                        const estado = estIdx !== -1 && cells.length > estIdx ? cells[estIdx].innerText.trim().replace(/\n/g, ' ') : 'Brasil';
                         
                         // Limpeza básica
                         if (nome && sigla && nome.length > 5 && sigla.length >= 2 && !results.some(r => r.nome === nome)) {
-                            results.push({nome: nome, sigla: sigla, tipo: tipo});
+                            results.push({nome: nome, sigla: sigla, tipo: tipo, estado: estado});
                         }
                     }
                 });
             }
-        });
+        });'
         
         // Fallback para estaduais que não estão em formato tabela
         if (results.length === 0 && tipo === 'Estadual') {
-            document.querySelectorAll('.mw-parser-output ul li').forEach(li => {
-                const text = li.innerText.trim();
-                const match = text.match(/([^\(]+)\s*\(([A-Za-z]+)\)/);
-                if (match) {
-                    let nome = match[1].trim();
-                    let sigla = match[2].trim();
-                    
-                    // Tratamento para limpar " [1]", " [2]" etc e outros lixos visuais do texto
-                    nome = nome.replace(/\[\d+\]|–.*|-.*| Dissolvida/g, '').trim();
-                    
-                    if (nome.includes('Universidade') || nome.includes('Centro')) {
-                         if (nome.length > 5 && sigla.length >= 2 && !results.some(r => r.nome === nome)) {
-                             results.push({nome: nome, sigla: sigla, tipo: tipo});
-                         }
-                    }
+            let currentState = 'Desconhecido';
+            document.querySelectorAll('.mw-parser-output h2, .mw-parser-output h3, .mw-parser-output ul').forEach(el => {
+                if (el.tagName === 'H2' || el.tagName === 'H3') {
+                    const headline = el.querySelector('.mw-headline');
+                    if (headline) currentState = headline.innerText.trim();
+                }
+                if (el.tagName === 'UL') {
+                    el.querySelectorAll('li').forEach(li => {
+                        const text = li.innerText.trim();
+                        const match = text.match(/([^\(]+)\s*\(([A-Za-z]+)\)/);
+                        if (match) {
+                            let nome = match[1].trim();
+                            let sigla = match[2].trim();
+                            
+                            // Tratamento para limpar " [1]", " [2]" etc e outros lixos visuais do texto
+                            nome = nome.replace(/\[\d+\]|–.*|-.*| Dissolvida/g, '').trim();
+                            
+                            if (nome.includes('Universidade') || nome.includes('Centro')) {
+                                 if (nome.length > 5 && sigla.length >= 2 && !results.some(r => r.nome === nome)) {
+                                     results.push({nome: nome, sigla: sigla, tipo: tipo, estado: currentState});
+                                 }
+                            }
+                        }
+                    });
                 }
             });
         }
@@ -134,11 +145,8 @@ def search_ouvidoria(service, nome, sigla):
             return items[0]['link'], items[0]['title']
         return "Não encontrado", "Não encontrado"
     except HttpError as e:
-        if e.resp.status == 429:
-            return search_ouvidoria_tavily(nome, sigla)
-        elif e.resp.status == 400:
-            return search_ouvidoria_tavily(nome, sigla)
-        return f"Erro na API: {e.resp.status}", ""
+        # Qualquer erro de API do Google (403 Forbidden, 400 Bad Request, 429 Quota) vai para o Fallback Tavily
+        return search_ouvidoria_tavily(nome, sigla)
     except Exception as e:
         return search_ouvidoria_tavily(nome, sigla)
 
@@ -185,6 +193,7 @@ def main():
             resultados.append({
                 "Nome": nome,
                 "Sigla": sigla,
+                "Estado": uni.get('estado', 'Desconhecido'),
                 "Tipo": uni['tipo'],
                 "Página da Ouvidoria Encontrada": link,
                 "Título da Página": title
