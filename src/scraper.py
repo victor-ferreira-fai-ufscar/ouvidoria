@@ -1,6 +1,9 @@
 import os
 import time
+import time
+import json
 import pandas as pd
+from pathlib import Path
 from dotenv import load_dotenv
 from playwright.sync_api import sync_playwright
 from googleapiclient.discovery import build
@@ -12,6 +15,22 @@ from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TaskPr
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 GOOGLE_CX = os.getenv("GOOGLE_CX")
+
+CACHE_FILE = Path("output/cache_buscas.json")
+
+def load_cache():
+    if CACHE_FILE.exists():
+        with open(CACHE_FILE, 'r', encoding='utf-8') as f:
+            try:
+                return json.load(f)
+            except json.JSONDecodeError:
+                return {}
+    return {}
+
+def save_cache(cache):
+    CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(CACHE_FILE, 'w', encoding='utf-8') as f:
+        json.dump(cache, f, ensure_ascii=False, indent=4)
 
 # Limpa o GOOGLE_CX caso o usuário tenha colado a URL inteira por engano
 if GOOGLE_CX and "cx=" in GOOGLE_CX:
@@ -171,6 +190,9 @@ def main():
     
     resultados = []
     
+    # Carrega cache
+    cache = load_cache()
+    
     # Executa a busca processando a UI interativa com rich
     with Progress(
         SpinnerColumn(),
@@ -187,8 +209,15 @@ def main():
             
             nome = uni['nome']
             sigla = uni['sigla']
+            cache_key = f"{nome} - {sigla}"
             
-            link, title = search_ouvidoria(service, nome, sigla)
+            if cache_key in cache:
+                link = cache[cache_key]['link']
+                title = cache[cache_key]['title']
+            else:
+                link, title = search_ouvidoria(service, nome, sigla)
+                cache[cache_key] = {'link': link, 'title': title}
+                save_cache(cache) # Salva a cada descoberta para não perder
             
             resultados.append({
                 "Nome": nome,
