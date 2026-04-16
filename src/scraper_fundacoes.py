@@ -16,6 +16,19 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 load_dotenv()
 console = Console()
 TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
+CACHE_FILE_FUND = Path("output/cache_fundacoes.json")
+
+def load_cache():
+    if CACHE_FILE_FUND.exists():
+        with open(CACHE_FILE_FUND, 'r', encoding='utf-8') as f:
+            try: return json.load(f)
+            except json.JSONDecodeError: return {}
+    return {}
+
+def save_cache(cache):
+    CACHE_FILE_FUND.parent.mkdir(parents=True, exist_ok=True)
+    with open(CACHE_FILE_FUND, 'w', encoding='utf-8') as f:
+        json.dump(cache, f, ensure_ascii=False, indent=4)
 
 def buscar_fundacao_tavily(uni_nome, sigla):
     """ Busca o site oficial da Fundação de Apoio da Universidade usando IA (Tavily) """
@@ -52,8 +65,8 @@ def varrer_site_fundacao(url_base):
         return "Site Inválido", ""
         
     palavras_chave = [
-        'ouvidoria', 'denuncia', 'compliance', 'etica', 'ética', 
-        'integridade', 'transparencia', 'transparência', 'fala.br', 'falabr'
+        'ouvidoria', 'denuncia', 'denúncia', 'compliance', 'etica', 'ética', 
+        'integridade', 'fala.br', 'falabr'
     ]
     
     links_encontrados = set()
@@ -102,6 +115,7 @@ def main():
     console.print(f"Encontramos [yellow]{len(federais)}[/] Universidades Federais mapeadas.\n")
     
     resultados = []
+    cache_fundacoes = load_cache()
     
     with Progress(
         SpinnerColumn(),
@@ -115,9 +129,16 @@ def main():
         for _, row in federais.iterrows():
             nome_uni = row['Nome']
             sigla_uni = row['Sigla']
+            cache_key = f"{sigla_uni}"
             
-            # Etapa 1: Descobrir o site da fundação usando o Tavily
-            nome_fundacao, url_fundacao = buscar_fundacao_tavily(nome_uni, sigla_uni)
+            # Etapa 1: Descobrir o site da fundação
+            if cache_key in cache_fundacoes:
+                nome_fundacao = cache_fundacoes[cache_key]['nome']
+                url_fundacao = cache_fundacoes[cache_key]['url']
+            else:
+                nome_fundacao, url_fundacao = buscar_fundacao_tavily(nome_uni, sigla_uni)
+                cache_fundacoes[cache_key] = {'nome': nome_fundacao, 'url': url_fundacao}
+                save_cache(cache_fundacoes)
             
             # Etapa 2: Varrer a homepage da fundação em busca de ouvidoria
             status_site, links_compl = varrer_site_fundacao(url_fundacao)
