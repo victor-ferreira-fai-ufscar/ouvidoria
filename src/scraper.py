@@ -70,7 +70,7 @@ def extract_universities_from_table(page, tipo):
                     }
                 });
             }
-        });'
+        });
         
         // Fallback para estaduais que não estão em formato tabela
         if (results.length === 0 && tipo === 'Estadual') {
