@@ -9,11 +9,11 @@ Mapeamento das **fundações de apoio (FAIs) de universidades federais**, indica
 | Indicador | Valor |
 |---|---|
 | Total de fundações (universidades federais) | 75 |
-| Sistema de ouvidoria PRÓPRIO (Sim) | 10 |
-| Próprio parcial (transparência/compliance + Fala.BR) | 2 |
-| Usa Fala.BR / ouvidoria da universidade (Não) | 0 |
-| Pendentes de verificação (varredura) | 63 |
-| Verificadas manualmente | 12 |
+| Sistema de ouvidoria PRÓPRIO (Sim) | 31 |
+| Próprio parcial (transparência/compliance + Fala.BR) | 8 |
+| Usa Fala.BR / ouvidoria da universidade (Não) | 32 |
+| Pendentes de verificação (varredura) | 4 |
+| Verificadas manualmente | 71 |
 
 **Legenda:** ✅ Sim = sistema próprio · 🟡 Parcial = tem transparência/compliance própria, mas ouvidoria via Fala.BR/universidade · ❌ Não = usa Fala.BR / ouvidoria da universidade · 🔍 A verificar = pendente de varredura.
 
@@ -21,78 +21,78 @@ Mapeamento das **fundações de apoio (FAIs) de universidades federais**, indica
 
 | Sigla | Fundação | Instituição | UF | Sistema de Ouvidoria | Própria? | Canal / URL | Verificação |
 |---|---|---|---|---|---|---|---|
+| **FUNDAPE** | Fundação de Apoio ao Desenvolvimento da Pesquisa e Extensão Universitária no Acre | UFAC | AC | Própria | ✅ Sim | [link](https://fundape.com.br/ouvidoria) | Verificado |
+| **FUNDEPES** | Fundação Universitária de Desenvolvimento de Extensão e Pesquisa | UFAL | AL | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **UNISOL** | Fundação de Apoio Institucional Rio Solimões | UFAM | AM | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FAPEX** | Fundação de Apoio à Pesquisa e Extensão | UFBA, UFRB, UFOB, UNILAB, IFBA | BA | Própria | ✅ Sim | [link](https://www.fapex.org.br/Fapex/Site/Principal/Home/ouvidoria) | Verificado |
+| **FEPBA** | Fundação Escola Politécnica da Bahia | UFBA, IFBA, UFSB | BA | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
 | **FCPC** | Fundação Cearense de Pesquisa e Cultura | UFC | CE | Própria | ✅ Sim | [link](https://fcpc.ufc.br/ouvidoria/) | Verificado |
+| **FAHUB** | Fundação de Apoio ao Desenvolvimento Científico e Tecnológico do HUB | HUB (UnB) | DF | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
 | **FINATEC** | Fundação de Empreendimentos Científicos e Tecnológicos | UnB | DF | Própria | ✅ Sim | [link](https://www.finatec.org.br) | Verificado |
+| **FEST** | Fundação Espírito-Santense de Tecnologia | UFES | ES | Própria | ✅ Sim | [link](https://fest.org.br/ouvidoria/) | Verificado |
 | **FUNAPE** | Fundação de Apoio à Pesquisa | UFG | GO | Própria | ✅ Sim | [link](https://site.funape.org.br/ouvidoria.php) | Verificado |
+| **FUNDAHC** | Fundação de Apoio ao Hospital das Clínicas da UFG | UFG | GO | Própria | ✅ Sim | [link](https://fundahc.org.br/p/487-ouvidoria) | Verificado |
+| **RTVE** | Fundação RTVE | UFG | GO | Própria | ✅ Sim | [link](https://rtve.org.br/ouvidoria/) | Verificado |
+| **FJM** | Fundação Josué Montello | UFMA | MA | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FSADU** | Fundação Sousândrade de Apoio ao Desenvolvimento da UFMA | UFMA | MA | Própria | ✅ Sim | [link](https://fsadu.org.br/sugestoes-e-criticas/) | Verificado |
+| **FACEPE-UNIFAL** | Fundação de Apoio à Cultura, Ensino, Pesquisa e Extensão de Alfenas | UNIFAL | MG | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FACEV** | Fundação Artística, Cultural e de Educação para a Cidadania de Viçosa | UFV | MG | Própria | ✅ Sim | [link](https://www.facev.org/ouvidoria) | Verificado |
+| **FADEPE/JF** | Fundação de Apoio e Desenvolvimento ao Ensino, Pesquisa e Extensão | UFJF | MG | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FAEPE** | Fundação de Apoio ao Ensino, Pesquisa e Extensão | UFLA | MG | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FAEPU** | Fundação de Assistência, Estudo e Pesquisa de Uberlândia | UFU | MG | Própria | ✅ Sim | [link](http://www.faepu.org.br/pagina/canal-denuncias-faepu) | Verificado |
+| **FAPEPE** | Fundação de Apoio ao Ensino, Pesquisa e Extensão de Itajubá | UNIFEI | MG | Própria (parcial) + Fala.BR / universidade | 🟡 Parcial | [link](http://fapepe.conveniar.com.br/portaltransparencia/) | Verificado |
+| **FAU-UFU** | Fundação de Apoio Universitário | UFU | MG | Própria | ✅ Sim | [link](https://fau.org.br/etica-e-compliance/) | Verificado |
+| **FAUF** | Fundação de Apoio à Universidade Federal de São João del-Rei | UFSJ | MG | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FCO** | Fundação Christiano Ottoni | UFMG | MG | Própria (parcial) + Fala.BR / universidade | 🟡 Parcial | [link](https://fco.org.br) | Verificado |
+| **FCT/JF** | Fundação para Pesquisa Científica e Tecnológica | UFJF | MG | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FEOP** | Fundação Educativa de Rádio e TV Ouro Preto | UFOP | MG | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FEPE** | Fundação de Apoio ao Ensino, Pesquisa e Extensão | UFMG | MG | Própria | ✅ Sim | [link](https://www.fepe.com.br/contatos/) | Verificado |
+| **FHU** | Fundação do Hospital Universitário da UFJF | UFJF | MG | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
 | **FUNARBE** | Fundação de Apoio à Universidade Federal de Viçosa | UFV | MG | Própria | ✅ Sim | [link](https://funarbe.org.br/a-funarbe/compliance/) | Verificado |
+| **FUNDAEPE** | Fundação de Apoio ao Ensino, Pesquisa e Extensão | UFVJM | MG | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FUNDECC** | Fundação de Desenvolvimento Científico e Cultural | UFLA | MG | Própria | ✅ Sim | [link](https://www.fundecc.org.br/denuncias/) | Verificado |
 | **FUNDEP** | Fundação de Desenvolvimento da Pesquisa | UFMG, UFABC, ITA | MG | Própria | ✅ Sim | [link](https://www.fundep.br/canal-de-denuncias/) | Verificado |
+| **FUPAI** | Fundação de Pesquisa e Assessoramento à Indústria | UNIFEI | MG | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **GORCEIX** | Fundação Gorceix | UFOP | MG | Própria (parcial) + Fala.BR / universidade | 🟡 Parcial | [link](https://site.gorceix.org.br/transparencia) | Verificado |
+| **IMEPEN** | Fundação IMEPEN | UFJF | MG | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **IPEAD** | Fundação Instituto de Pesquisas Econômicas, Administrativas e Contábeis | UFMG | MG | Própria | ✅ Sim | [link](https://site.ipead.face.ufmg.br/contato/) | Verificado |
 | **FAPEC** | Fundação de Apoio à Pesquisa, ao Ensino e à Cultura | UFMS | MS | Própria | ✅ Sim | [link](https://fundacaofapec.org.br) | Verificado |
+| **FUNAEPE** | Fundação de Apoio ao Ensino, Pesquisa e Extensão | UFGD | MS | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **UNISELVA** | Fundação de Apoio e Desenvolvimento da UFMT | UFMT | MT | Própria (parcial) + Fala.BR / universidade | 🟡 Parcial | [link](https://webunisig.fundacaouniselva.org.br/transparencia/) | Verificado |
 | **FADESP** | Fundação de Amparo e Desenvolvimento da Pesquisa | UFPA | PA | Própria (parcial) + Fala.BR / universidade | 🟡 Parcial | [link](https://transparencia.fadesp.org.br/) | Verificado |
+| **FUNPEA** | Fundação de Apoio ao Ensino, Pesquisa e Extensão | UFPA | PA | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **PaqTcPB** | Fundação Parque Tecnológico da Paraíba | UFCG | PB | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
 | **FADE** | Fundação de Apoio ao Desenvolvimento da UFPE | UFPE | PE | Própria | ✅ Sim | [link](https://www.fade.org.br) | Verificado |
+| **FADURPE** | Fundação Apolônio Salles de Desenvolvimento Educacional | UFRPE | PE | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FADEX** | Fundação Cultural e de Fomento à Pesquisa, Ensino, Extensão e Inovação | UFPI | PI | Própria | ✅ Sim | [link](https://www.fadex.org.br/dados_contatos) | Verificado |
+| **FUNPAR** | Fundação da Universidade Federal do Paraná | UFPR | PR | Própria | ✅ Sim | [link](https://www.funpar.ufpr.br/paginas.php?page=39) | Verificado |
+| **FUNTEF-PR** | Fundação de Apoio à Educação, Pesquisa e Desenvolvimento Científico | UTFPR | PR | Própria | ✅ Sim | [link](https://funtefpr.org.br/fale-conosco/) | Verificado |
+| **FUPEF** | Fundação de Pesquisas Florestais do Paraná | UFPR | PR | Própria | ✅ Sim | [link](https://fupef.org.br/ouvidoria/) | Verificado |
+| **BIORIO** | Fundação Bio-Rio | UFRJ | RJ | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
 | **COPPETEC** | Fundação Coordenação de Projetos, Pesquisas e Estudos Tecnológicos | UFRJ | RJ | Própria | ✅ Sim | [link](https://ouvidoria.coppetec.coppe.ufrj.br/) | Verificado |
+| **FEC** | Fundação Euclides da Cunha | UFF | RJ | Própria | ✅ Sim | [link](https://somosfec.org.br/compliance-denuncias/) | Verificado |
+| **FUJB** | Fundação Universitária José Bonifácio | UFRJ | RJ | Própria | ✅ Sim | [link](https://www.fujb.ufrj.br) | Verificado |
+| **FURJ** | Fundação Universitária José Bonifácio | UFRJ | RJ | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FGD** | Fundação Guimarães Duque | UFERSA | RN | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
 | **FUNPEC** | Fundação Norte-Rio-Grandense de Pesquisa e Cultura | UFRN | RN | Própria | ✅ Sim | [link](https://www.funpec.br) | Verificado |
+| **FAHERG** | Fundação de Apoio ao Hospital de Ensino do Rio Grande | HU-FURG | RS | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FATEC-UFSM** | Fundação de Apoio à Tecnologia e Ciência | UFSM | RS | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FAURG** | Fundação de Apoio à Universidade Federal do Rio Grande | FURG | RS | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FAURGS** | Fundação de Apoio da Universidade Federal do Rio Grande do Sul | UFRGS | RS | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FDMS** | Fundação Delfim Mendes Silveira | UFPel | RS | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FEEng** | Fundação Empresa Escola de Engenharia da UFRGS | UFRGS | RS | Própria | ✅ Sim | [link](https://www.ufrgs.br/feeng/?page_id=81) | Verificado |
+| **FLE** | Fundação Luiz Englert | UFRGS | RS | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FSB** | Fundação Simon Bolívar | UFPel | RS | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FUNDMED** | Fundação Médica do Rio Grande do Sul | UFRGS / HCPA | RS | Própria | ✅ Sim | [link](https://fundmed.org.br/en/compliance-program/) | Verificado |
+| **FAPEU** | Fundação de Amparo à Pesquisa e Extensão Universitária | UFSC, IFSC, UFFS | SC | Própria | ✅ Sim | [link](https://www.contatoseguro.com.br/fapeu) | Verificado |
+| **FEESC** | Fundação de Ensino e Engenharia de Santa Catarina (Stemmer) | UFSC | SC | Própria (parcial) + Fala.BR / universidade | 🟡 Parcial | [link](https://www.feesc.org.br) | Verificado |
+| **FEPESE** | Fundação de Estudos e Pesquisas Socioeconômicos | UFSC | SC | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FUNJAB** | Fundação José Arthur Boiteux | UFSC | SC | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **FAPESE** | Fundação de Apoio à Pesquisa e Extensão de Sergipe | UFS | SE | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
 | **FAI.UFSCAR** | Fundação de Apoio Institucional ao Desenvolvimento Científico e Tecnológico | UFSCar | SP | Própria (parcial) + Fala.BR / universidade | 🟡 Parcial | [link](https://www.fai.ufscar.br/transparencia/home/index/1) | Verificado |
 | **FAP UNIFESP** | Fundação de Apoio à UNIFESP | UNIFESP, UFABC | SP | Própria | ✅ Sim | [link](https://www.fapunifesp.edu.br) | Verificado |
-| **FUNDAPE** | Fundação de Apoio ao Desenvolvimento da Pesquisa e Extensão | UFAC | AC | A verificar | 🔍 A verificar | — | Pendente |
-| **FUNDEPES** | Fundação Universitária de Desenvolvimento de Extensão e Pesquisa | UFAL | AL | A verificar | 🔍 A verificar | — | Pendente |
-| **UNISOL** | Fundação Universidade Solidária | UFAM | AM | A verificar | 🔍 A verificar | — | Pendente |
+| **FAPTO** | Fundação de Apoio Científico e Tecnológico do Tocantins | UFT | TO | Própria (parcial) + Fala.BR / universidade | 🟡 Parcial | [link](https://fapto.org.br) | Verificado |
 | **ADM** | Fundação Escola de Administração | UFBA | BA | A verificar | 🔍 A verificar | — | Pendente |
-| **FAPEX** | Fundação de Apoio à Pesquisa e Extensão | UFBA, UFRB, UFOB, UNILAB, IFBA | BA | A verificar | 🔍 A verificar | — | Pendente |
-| **FEPBA** | Fundação Escola Politécnica da Bahia | UFBA, IFBA, UFSB | BA | A verificar | 🔍 A verificar | — | Pendente |
-| **ASTEF** | Fundação Cearense de Apoio ao Desenvolvimento Científico e Tecnológico | UFC | CE | A verificar | 🔍 A verificar | — | Pendente |
-| **FAHUB** | Fundação de Apoio ao Hospital Universitário de Brasília | HUB (UnB) | DF | A verificar | 🔍 A verificar | — | Pendente |
-| **FEST** | Fundação Espírito-Santense de Tecnologia | UFES | ES | A verificar | 🔍 A verificar | — | Pendente |
-| **FUCAM** | Fundação Ceciliano Abel de Almeida | UFES | ES | A verificar | 🔍 A verificar | — | Pendente |
-| **FUNDAHC** | Fundação de Apoio ao Hospital das Clínicas da UFG | UFG | GO | A verificar | 🔍 A verificar | — | Pendente |
-| **RTVE** | Fundação RTVE | UFG | GO | A verificar | 🔍 A verificar | — | Pendente |
-| **FJM** | Fundação Josué Montello | UFMA | MA | A verificar | 🔍 A verificar | — | Pendente |
-| **FSADU** | Fundação Sousândrade de Apoio ao Desenvolvimento da UFMA | UFMA | MA | A verificar | 🔍 A verificar | — | Pendente |
-| **FACEPE-UNIFAL** | Fundação de Apoio à Cultura, Ensino, Pesquisa e Extensão | UNIFAL | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **FACEV** | Fundação de Apoio e Desenvolvimento Científico | UFV | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **FADEPE/JF** | Fundação de Apoio e Desenvolvimento ao Ensino, Pesquisa e Extensão | UFJF | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **FAEPE** | Fundação de Apoio ao Ensino, Pesquisa e Extensão | UFLA | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **FAEPU** | Fundação de Assistência, Estudo e Pesquisa de Uberlândia | UFU | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **FAPEPE** | Fundação de Apoio à Pesquisa, Ensino e Extensão | UNIFEI | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **FAU-UFU** | Fundação de Apoio Universitário | UFU | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **FAUF** | Fundação de Apoio à Universidade Federal de São João del-Rei | UFSJ | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **FCO** | Fundação Christiano Ottoni | UFMG | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **FCT/JF** | Fundação para Pesquisa Científica e Tecnológica | UFJF | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **FEOP** | Fundação Educativa de Ouro Preto | UFOP | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **FEPE** | Fundação de Ensino e Pesquisa | UFMG | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **FHU** | Fundação do Hospital Universitário da UFJF | UFJF | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **FUNDAEPE** | Fundação de Apoio ao Ensino, Pesquisa e Extensão | UFVJM | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **FUNDECC** | Fundação de Desenvolvimento Científico e Cultural | UFLA | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **FUPAI** | Fundação de Pesquisa e Assessoramento à Indústria | UNIFEI | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **GORCEIX** | Fundação Gorceix | UFOP | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **IMEPEN** | Fundação IMEPEN | UFJF | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **IPEAD** | Fundação Instituto de Pesquisas Econômicas, Administrativas e Contábeis | UFMG | MG | A verificar | 🔍 A verificar | — | Pendente |
-| **FUNAEPE** | Fundação de Apoio ao Ensino, Pesquisa e Extensão | UFGD | MS | A verificar | 🔍 A verificar | — | Pendente |
-| **UNISELVA** | Fundação de Apoio e Desenvolvimento da UFMT | UFMT | MT | A verificar | 🔍 A verificar | — | Pendente |
-| **FUNPEA** | Fundação de Apoio ao Ensino, Pesquisa e Extensão | UFPA | PA | A verificar | 🔍 A verificar | — | Pendente |
-| **PaqTcPB** | Fundação Parque Tecnológico da Paraíba | UFCG | PB | A verificar | 🔍 A verificar | — | Pendente |
-| **FADURPE** | Fundação Apolônio Salles de Desenvolvimento Educacional | UFRPE | PE | A verificar | 🔍 A verificar | — | Pendente |
-| **FADEX** | Fundação Cultural e de Fomento à Pesquisa, Ensino e Extensão | UFPI | PI | A verificar | 🔍 A verificar | — | Pendente |
-| **FUNPAR** | Fundação da Universidade Federal do Paraná | UFPR | PR | A verificar | 🔍 A verificar | — | Pendente |
-| **FUNTEF-PR** | Fundação de Apoio à Educação, Pesquisa e Desenvolvimento Científico | UTFPR | PR | A verificar | 🔍 A verificar | — | Pendente |
-| **FUPEF** | Fundação de Pesquisas Florestais do Paraná | UFPR | PR | A verificar | 🔍 A verificar | — | Pendente |
-| **BIORIO** | Fundação Bio-Rio | UFRJ | RJ | A verificar | 🔍 A verificar | — | Pendente |
-| **FEC** | Fundação Euclides da Cunha | UFF | RJ | A verificar | 🔍 A verificar | — | Pendente |
-| **FUJB** | Fundação Universidade-Empresa de Tecnologia e Ciências (José Bonifácio) | UFRJ | RJ | A verificar | 🔍 A verificar | — | Pendente |
+| **ASTEF** | Fundação ASTEF / FASTEF (Apoio a Serviços Técnicos, Ensino e Fomento a Pesquisas) | UFC | CE | A verificar | 🔍 A verificar | — | Pendente |
+| **FUCAM** | Fundação de Apoio Cassiano Antônio Moraes | UFES | ES | A verificar | 🔍 A verificar | — | Pendente |
 | **FUNRIO** | Fundação de Apoio à Pesquisa e Extensão | UFRJ | RJ | A verificar | 🔍 A verificar | — | Pendente |
-| **FURJ** | Fundação Universitária José Bonifácio | UFRJ | RJ | A verificar | 🔍 A verificar | — | Pendente |
-| **FGD** | Fundação Guimarães Duque | UFERSA | RN | A verificar | 🔍 A verificar | — | Pendente |
-| **FAHERG** | Fundação de Apoio ao Hospital Universitário (Dr. Riet Corrêa Jr.) | HU-FURG | RS | A verificar | 🔍 A verificar | — | Pendente |
-| **FATEC-UFSM** | Fundação de Apoio à Tecnologia e Ciência | UFSM | RS | A verificar | 🔍 A verificar | — | Pendente |
-| **FAURG** | Fundação de Apoio à Universidade Federal do Rio Grande | FURG | RS | A verificar | 🔍 A verificar | — | Pendente |
-| **FAURGS** | Fundação de Apoio da Universidade Federal do Rio Grande do Sul | UFRGS | RS | A verificar | 🔍 A verificar | — | Pendente |
-| **FDMS** | Fundação Delfim Mendes Silveira | UFPel | RS | A verificar | 🔍 A verificar | — | Pendente |
-| **FEEng** | Fundação Empresa Escola de Engenharia da UFRGS | UFRGS | RS | A verificar | 🔍 A verificar | — | Pendente |
-| **FLE** | Fundação Luiz Englert | UFRGS | RS | A verificar | 🔍 A verificar | — | Pendente |
-| **FSB** | Fundação Simon Bolívar | UFPel | RS | A verificar | 🔍 A verificar | — | Pendente |
-| **FUNDMED** | Fundação Médica do Rio Grande do Sul | UFRGS / HCPA | RS | A verificar | 🔍 A verificar | — | Pendente |
-| **FAPEU** | Fundação de Amparo à Pesquisa e Extensão Universitária | UFSC, IFSC, UFFS | SC | A verificar | 🔍 A verificar | — | Pendente |
-| **FEESC** | Fundação de Ensino e Engenharia de Santa Catarina (Stemmer) | UFSC | SC | A verificar | 🔍 A verificar | — | Pendente |
-| **FEPESE** | Fundação de Estudos e Pesquisas Socioeconômicos | UFSC | SC | A verificar | 🔍 A verificar | — | Pendente |
-| **FUNJAB** | Fundação José Arthur Boiteux | UFSC | SC | A verificar | 🔍 A verificar | — | Pendente |
-| **FAPESE** | Fundação de Apoio à Pesquisa e Extensão de Sergipe | UFS | SE | A verificar | 🔍 A verificar | — | Pendente |
-| **FAPTO** | Fundação de Apoio Científico e Tecnológico do Tocantins | UFT | TO | A verificar | 🔍 A verificar | — | Pendente |
