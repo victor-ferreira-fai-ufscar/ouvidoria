@@ -15,5 +15,7 @@ wheels/
 # Arquivos de credenciais
 client_secret*.json
 
-# Arquivos de saída
-output/
+# Arquivos de saída (mantém versionadas só as planilhas finais)
+output/*
+!output/ouvidorias_fais_federais.xlsx
+!output/ouvidorias_fais_federais.csv
