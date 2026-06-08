@@ -10,10 +10,10 @@ Mapeamento das **fundações de apoio (FAIs) de universidades federais**, indica
 |---|---|
 | Total de fundações (universidades federais) | 75 |
 | Sistema de ouvidoria PRÓPRIO (Sim) | 31 |
-| Próprio parcial (transparência/compliance + Fala.BR) | 8 |
-| Usa Fala.BR / ouvidoria da universidade (Não) | 32 |
-| Pendentes de verificação (varredura) | 4 |
-| Verificadas manualmente | 71 |
+| Próprio parcial (transparência/compliance + Fala.BR) | 9 |
+| Usa Fala.BR / ouvidoria da universidade (Não) | 35 |
+| Pendentes de verificação (varredura) | 0 |
+| Verificadas manualmente | 75 |
 
 **Legenda:** ✅ Sim = sistema próprio · 🟡 Parcial = tem transparência/compliance própria, mas ouvidoria via Fala.BR/universidade · ❌ Não = usa Fala.BR / ouvidoria da universidade · 🔍 A verificar = pendente de varredura.
 
@@ -24,12 +24,15 @@ Mapeamento das **fundações de apoio (FAIs) de universidades federais**, indica
 | **FUNDAPE** | Fundação de Apoio ao Desenvolvimento da Pesquisa e Extensão Universitária no Acre | UFAC | AC | Própria | ✅ Sim | [link](https://fundape.com.br/ouvidoria) | Verificado |
 | **FUNDEPES** | Fundação Universitária de Desenvolvimento de Extensão e Pesquisa | UFAL | AL | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
 | **UNISOL** | Fundação de Apoio Institucional Rio Solimões | UFAM | AM | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **ADM** | Fundação ADM (Escola de Administração) | UFBA | BA | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
 | **FAPEX** | Fundação de Apoio à Pesquisa e Extensão | UFBA, UFRB, UFOB, UNILAB, IFBA | BA | Própria | ✅ Sim | [link](https://www.fapex.org.br/Fapex/Site/Principal/Home/ouvidoria) | Verificado |
 | **FEPBA** | Fundação Escola Politécnica da Bahia | UFBA, IFBA, UFSB | BA | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
+| **ASTEF** | Fundação ASTEF / FASTEF (Apoio a Serviços Técnicos, Ensino e Fomento a Pesquisas) | UFC | CE | Própria (parcial) + Fala.BR / universidade | 🟡 Parcial | [link](https://fastef.ufc.br/informacao-institucional/) | Verificado |
 | **FCPC** | Fundação Cearense de Pesquisa e Cultura | UFC | CE | Própria | ✅ Sim | [link](https://fcpc.ufc.br/ouvidoria/) | Verificado |
 | **FAHUB** | Fundação de Apoio ao Desenvolvimento Científico e Tecnológico do HUB | HUB (UnB) | DF | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
 | **FINATEC** | Fundação de Empreendimentos Científicos e Tecnológicos | UnB | DF | Própria | ✅ Sim | [link](https://www.finatec.org.br) | Verificado |
 | **FEST** | Fundação Espírito-Santense de Tecnologia | UFES | ES | Própria | ✅ Sim | [link](https://fest.org.br/ouvidoria/) | Verificado |
+| **FUCAM** | Fundação de Apoio Cassiano Antônio Moraes | UFES | ES | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
 | **FUNAPE** | Fundação de Apoio à Pesquisa | UFG | GO | Própria | ✅ Sim | [link](https://site.funape.org.br/ouvidoria.php) | Verificado |
 | **FUNDAHC** | Fundação de Apoio ao Hospital das Clínicas da UFG | UFG | GO | Própria | ✅ Sim | [link](https://fundahc.org.br/p/487-ouvidoria) | Verificado |
 | **RTVE** | Fundação RTVE | UFG | GO | Própria | ✅ Sim | [link](https://rtve.org.br/ouvidoria/) | Verificado |
@@ -72,6 +75,7 @@ Mapeamento das **fundações de apoio (FAIs) de universidades federais**, indica
 | **COPPETEC** | Fundação Coordenação de Projetos, Pesquisas e Estudos Tecnológicos | UFRJ | RJ | Própria | ✅ Sim | [link](https://ouvidoria.coppetec.coppe.ufrj.br/) | Verificado |
 | **FEC** | Fundação Euclides da Cunha | UFF | RJ | Própria | ✅ Sim | [link](https://somosfec.org.br/compliance-denuncias/) | Verificado |
 | **FUJB** | Fundação Universitária José Bonifácio | UFRJ | RJ | Própria | ✅ Sim | [link](https://www.fujb.ufrj.br) | Verificado |
+| **FUNRIO** | Fundação de Apoio à Pesquisa, Ensino e Assistência (Gaffrée e Guinle) | UNIRIO | RJ | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
 | **FURJ** | Fundação Universitária José Bonifácio | UFRJ | RJ | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
 | **FGD** | Fundação Guimarães Duque | UFERSA | RN | Fala.BR / ouvidoria da universidade | ❌ Não | — | Verificado |
 | **FUNPEC** | Fundação Norte-Rio-Grandense de Pesquisa e Cultura | UFRN | RN | Própria | ✅ Sim | [link](https://www.funpec.br) | Verificado |
@@ -92,7 +96,3 @@ Mapeamento das **fundações de apoio (FAIs) de universidades federais**, indica
 | **FAI.UFSCAR** | Fundação de Apoio Institucional ao Desenvolvimento Científico e Tecnológico | UFSCar | SP | Própria (parcial) + Fala.BR / universidade | 🟡 Parcial | [link](https://www.fai.ufscar.br/transparencia/home/index/1) | Verificado |
 | **FAP UNIFESP** | Fundação de Apoio à UNIFESP | UNIFESP, UFABC | SP | Própria | ✅ Sim | [link](https://www.fapunifesp.edu.br) | Verificado |
 | **FAPTO** | Fundação de Apoio Científico e Tecnológico do Tocantins | UFT | TO | Própria (parcial) + Fala.BR / universidade | 🟡 Parcial | [link](https://fapto.org.br) | Verificado |
-| **ADM** | Fundação Escola de Administração | UFBA | BA | A verificar | 🔍 A verificar | — | Pendente |
-| **ASTEF** | Fundação ASTEF / FASTEF (Apoio a Serviços Técnicos, Ensino e Fomento a Pesquisas) | UFC | CE | A verificar | 🔍 A verificar | — | Pendente |
-| **FUCAM** | Fundação de Apoio Cassiano Antônio Moraes | UFES | ES | A verificar | 🔍 A verificar | — | Pendente |
-| **FUNRIO** | Fundação de Apoio à Pesquisa e Extensão | UFRJ | RJ | A verificar | 🔍 A verificar | — | Pendente |

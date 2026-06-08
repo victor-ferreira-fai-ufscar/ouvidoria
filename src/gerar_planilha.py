@@ -37,7 +37,7 @@ DOCS_DIR = Path("docs")       # Markdown legível (versionado, visível no GitHu
 # --------------------------------------------------------------------------
 # Classificação do tipo de instituição apoiada (a partir do campo instituicao)
 # --------------------------------------------------------------------------
-_UNI_FED_EXPLICITAS = {"UNB", "UNIFESP", "UNIFEI", "UNIFAL", "UNILAB", "UTFPR", "FURG"}
+_UNI_FED_EXPLICITAS = {"UNB", "UNIFESP", "UNIFEI", "UNIFAL", "UNILAB", "UTFPR", "FURG", "UNIRIO"}
 _ESTADUAIS = {"USP", "UNESP", "UNICAMP", "UEA", "UEL", "UNEMAT", "UEMG", "UNEB", "UNICENTRO", "IPT", "FCAV"}
 _ICT_FEDERAL = {"INPE", "FIOCRUZ", "EMBRAPA", "LNCC", "CTI", "IME", "ITA", "MARINHA", "NIT", "DCT", "DECEX", "EXÉRCITO", "EXERCITO"}
 
