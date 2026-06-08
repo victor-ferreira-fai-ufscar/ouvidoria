@@ -78,8 +78,30 @@ SISTEMA = {
     "A verificar": "A verificar",
 }
 
+# Palavras na coluna Observações que indicam inferência/identidade corrigida.
+_FLAGS_REVISAR = (
+    "não localizou", "busca não", "a confirmar", "a esclarecer",
+    "vínculo corrigido", "não a lista", "instituiu a fastef", "liquidação",
+)
+
+
+def confianca(fai) -> str:
+    """Nível de confiança da classificação:
+    - 'Alta'    => evidência direta (canal próprio encontrado, ou roteamento
+                   explícito para Fala.BR/ouvidoria da universidade);
+    - 'Revisar' => inferência, ausência de evidência, juízo (Parcial) ou
+                   identidade/vínculo corrigidos — vale conferência humana.
+    """
+    obs = str(fai.get("obs", "")).lower()
+    if any(k in obs for k in _FLAGS_REVISAR):
+        return "Revisar"
+    if fai["ouvidoria"] in ("Parcial", "A verificar"):
+        return "Revisar"
+    return "Alta"
+
+
 COLUNAS_SAIDA = ["sigla", "nome", "instituicao", "uf", "tipo_ies", "sistema",
-                 "ouvidoria", "canal_url", "status", "obs"]
+                 "ouvidoria", "confianca", "canal_url", "status", "obs"]
 
 ROTULOS = {
     "sigla": "Sigla",
@@ -89,6 +111,7 @@ ROTULOS = {
     "tipo_ies": "Tipo de Instituição",
     "sistema": "Sistema de Ouvidoria",
     "ouvidoria": "Ouvidoria Própria?",
+    "confianca": "Confiança",
     "canal_url": "Canal / URL",
     "status": "Verificação",
     "obs": "Observações",
@@ -99,6 +122,7 @@ def montar_dataframe(somente_federais: bool = True) -> pd.DataFrame:
     df = pd.DataFrame(FAIS)
     df["tipo_ies"] = df["instituicao"].map(tipo_ies)
     df["sistema"] = df["ouvidoria"].map(SISTEMA).fillna(df["ouvidoria"])
+    df["confianca"] = df.apply(confianca, axis=1)
 
     if somente_federais:
         df = df[df["tipo_ies"].isin(ESCOPO_FEDERAL)].copy()
@@ -176,16 +200,18 @@ def exportar_markdown(df: pd.DataFrame) -> Path:
              "da universidade · 🔍 A verificar = pendente de varredura.\n")
 
     L.append("## Fundações\n")
-    cab = ["Sigla", "Fundação", "Instituição", "UF", "Sistema de Ouvidoria", "Própria?", "Canal / URL", "Verificação"]
+    cab = ["Sigla", "Fundação", "Instituição", "UF", "Sistema de Ouvidoria", "Própria?", "Confiança", "Canal / URL", "Verificação"]
     L.append("| " + " | ".join(cab) + " |")
     L.append("|" + "|".join(["---"] * len(cab)) + "|")
+    conf_emoji = {"Alta": "🟢 Alta", "Revisar": "🟠 Revisar"}
     for _, r in df.iterrows():
         canal = r["canal_url"] or "—"
         if canal.startswith("http"):
             canal = f"[link]({canal})"
-        L.append("| " + " | ".join([
+        L.append("| " + " | ".join(str(x) for x in [
             f"**{r['sigla']}**", r["nome"], r["instituicao"], r["uf"],
-            r["sistema"], emoji.get(r["ouvidoria"], r["ouvidoria"]), canal, r["status"],
+            r["sistema"], emoji.get(r["ouvidoria"], r["ouvidoria"]),
+            conf_emoji.get(r["confianca"], r["confianca"]), canal, r["status"],
         ]) + " |")
     L.append("")
     destino.write_text("\n".join(L), encoding="utf-8")
